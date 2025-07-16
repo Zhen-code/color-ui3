@@ -5,3 +5,4 @@ declare module '*.vue' {
     };
     export default component
 }
+declare type ComponentSize = 'large' | 'medium' | 'small' | 'mini'

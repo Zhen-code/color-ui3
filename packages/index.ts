@@ -1,15 +1,16 @@
 import { App } from "vue";
 
-import Button from "./button/index";
+// import Button from "./button/index";
 
 import Icon from "icon";
 const components = [ // 引入所有组件
-    Button,
+    // Button,
     Icon
 ];
 const install = (app: App): void => {
     components.forEach(component => {
-        app.component(component.name, component);
+        // app.component(component.name, component);
+        app.use(component)
     })
 }
 export default {
